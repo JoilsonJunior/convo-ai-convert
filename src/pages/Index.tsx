@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,11 +28,11 @@ const Index = () => {
           </Badge>
           <h1 className="text-5xl lg:text-6xl font-bold mb-8 leading-tight text-gray-900">
             Substitua sua equipe de atendimento por
-            <span className="text-blue-600 block">IA que vende 24 horas por dia</span>
+            <span className="text-blue-600 block">IA super humanizada que vende 24 horas por dia</span>
           </h1>
           <p className="text-xl lg:text-2xl mb-12 text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Chega de salários, férias, 13º e dores de cabeça para gerenciar pessoas.<br />
-            <span className="font-semibold text-gray-900">Nossa IA liga, agenda e converte +35% mais leads que humanos.</span>
+            Chega de salários, férias, 13º. Reduza seu tempo de atendimento para 30 segundos.<br />
+            <span className="font-semibold text-gray-900">Nossa IA humanizada liga, agenda e converte +50% a mais leads que humanos.</span>
           </p>
           
           <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
@@ -53,11 +52,11 @@ const Index = () => {
               <div className="text-gray-600">Sem pausa, feriado ou férias</div>
             </div>
             <div className="text-center p-6">
-              <div className="text-4xl font-bold text-blue-600 mb-2">48h</div>
-              <div className="text-gray-600">Para estar funcionando</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">30s</div>
+              <div className="text-gray-600">Tempo de resposta</div>
             </div>
             <div className="text-center p-6">
-              <div className="text-4xl font-bold text-blue-600 mb-2">+35%</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">+50%</div>
               <div className="text-gray-600">Mais conversões garantidas</div>
             </div>
           </div>
@@ -69,14 +68,15 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-              Você já investiu <span className="text-red-600">pesado em vendas</span>... mas ainda perde dinheiro
+              Você já investiu <span className="text-red-600">pesado em marketing</span>... mas ainda perde dinheiro
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
               {[
                 { icon: TrendingUp, title: "Tráfego pago", desc: "Facebook, Google, LinkedIn" },
                 { icon: Users, title: "Equipe comercial", desc: "Salários, treinamentos, gestão" },
                 { icon: Target, title: "Processos", desc: "Scripts, funis, metodologias" },
-                { icon: Clock, title: "Ferramentas", desc: "CRM, automações, relatórios" }
+                { icon: Clock, title: "Ferramentas", desc: "CRM, automações, relatórios" },
+                { icon: Phone, title: "Tempo de atendimento", desc: "Demora para responder leads" }
               ].map((item, index) => (
                 <Card key={index} className="p-6 border-l-4 border-l-red-500 bg-white">
                   <CardContent className="p-0 text-center">
@@ -109,7 +109,7 @@ const Index = () => {
               <div>
                 <div className="space-y-8">
                   {[
-                    { icon: Zap, title: "Resposta em segundos", desc: "Contato imediato quando o lead está interessado" },
+                    { icon: Zap, title: "Resposta em 30 segundos", desc: "Contato imediato quando o lead está interessado" },
                     { icon: Clock, title: "Funciona 24/7", desc: "Madrugada, fim de semana, feriados - sempre ativo" },
                     { icon: Phone, title: "Liga e agenda sozinho", desc: "Conversação natural que realmente converte" },
                     { icon: Shield, title: "Zero risco trabalhista", desc: "Sem CLT, férias, 13º, FGTS ou dores de cabeça" }
@@ -146,11 +146,11 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-white rounded-lg">
-                    <span className="text-gray-700 font-medium">Custo mensal:</span>
+                    <span className="text-gray-700 font-medium">Conversão:</span>
                     <div className="flex items-center space-x-3">
-                      <span className="text-red-600 line-through">R$ 8.000+</span>
+                      <span className="text-red-600 line-through">25%</span>
                       <ArrowRight className="h-4 w-4 text-gray-400" />
-                      <span className="text-green-600 font-bold">R$ 2.500</span>
+                      <span className="text-green-600 font-bold">+50%</span>
                     </div>
                   </div>
                 </div>
@@ -298,20 +298,20 @@ const Index = () => {
                   <div className="space-y-3 text-lg">
                     <div className="flex justify-between">
                       <span>Leads gerados por mês:</span>
-                      <span className="font-bold">500</span>
+                      <span className="font-bold">100</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Perdidos por demora no atendimento:</span>
-                      <span className="font-bold text-red-400">350 (70%)</span>
+                      <span className="font-bold text-red-400">70 (70%)</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Valor médio por venda:</span>
-                      <span className="font-bold">R$ 3.500</span>
+                      <span className="font-bold">R$ 500</span>
                     </div>
                     <Separator className="my-4 bg-gray-700" />
                     <div className="flex justify-between text-xl">
                       <span className="font-bold">Prejuízo mensal:</span>
-                      <span className="font-bold text-red-400">R$ 1.225.000</span>
+                      <span className="font-bold text-red-400">R$ 35.000</span>
                     </div>
                   </div>
                 </div>
@@ -322,11 +322,11 @@ const Index = () => {
       </section>
 
       {/* Por que Invoicce */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-              Por que a Invoicce é a <span className="text-yellow-300">única solução completa</span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-16">
+              Por que a Invoicce é a <span className="text-blue-600">única solução completa</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {[
@@ -367,14 +367,14 @@ const Index = () => {
                   highlight: "VIP"
                 }
               ].map((item, index) => (
-                <Card key={index} className="bg-white/10 border-white/20 text-white backdrop-blur">
+                <Card key={index} className="bg-white border-blue-200 text-gray-900 shadow-lg">
                   <CardContent className="p-8 text-center">
-                    <div className="bg-yellow-300 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                       <item.icon className="h-10 w-10 text-blue-600" />
                     </div>
-                    <div className="text-3xl font-bold text-yellow-300 mb-3">{item.highlight}</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-3">{item.highlight}</div>
                     <h3 className="font-bold text-xl mb-4">{item.title}</h3>
-                    <p className="text-blue-100 leading-relaxed">{item.desc}</p>
+                    <p className="text-gray-600 leading-relaxed">{item.desc}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -494,80 +494,7 @@ const Index = () => {
       </section>
 
       {/* O que recebe */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-16">
-              Tudo que você recebe ao contratar a Invoicce
-            </h2>
-            <div className="space-y-6 mb-12">
-              {[
-                {
-                  title: "Setup Completo da IA",
-                  desc: "Configuração personalizada funcionando em até 48h",
-                  icon: Zap,
-                  value: "R$ 15.000"
-                },
-                {
-                  title: "Equipe Dedicada na Implementação",
-                  desc: "Time especializado do primeiro dia até o go-live",
-                  icon: Users,
-                  value: "R$ 8.000"
-                },
-                {
-                  title: "Integração Total ao CRM",
-                  desc: "Conectamos com seu sistema atual sem complicação",
-                  icon: Target,
-                  value: "R$ 5.000"
-                },
-                {
-                  title: "Fluxos Automáticos Prontos",
-                  desc: "Ligação, mensagem e agendamento 100% automatizados",
-                  icon: Phone,
-                  value: "R$ 12.000"
-                },
-                {
-                  title: "Suporte VIP Vitalício",
-                  desc: "Atendimento prioritário e otimização contínua",
-                  icon: Shield,
-                  value: "R$ 6.000"
-                }
-              ].map((item, index) => (
-                <Card key={index} className="p-8 border-l-4 border-l-blue-500 bg-gray-50">
-                  <CardContent className="p-0">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-6">
-                        <div className="bg-blue-100 p-4 rounded-xl">
-                          <item.icon className="h-8 w-8 text-blue-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-bold text-gray-900 text-xl mb-2">{item.title}</h3>
-                          <p className="text-gray-600 text-lg">{item.desc}</p>
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-gray-400 line-through text-lg">{item.value}</div>
-                        <div className="text-green-600 font-bold text-lg">INCLUSO</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <div className="bg-green-50 border border-green-200 p-10 rounded-2xl text-center">
-              <h3 className="font-bold text-green-800 text-2xl mb-4">
-                Valor total se contratasse separado: R$ 46.000
-              </h3>
-              <p className="text-green-700 text-xl">
-                Investimento Invoicce: <span className="font-bold text-3xl">A partir de R$ 2.500/mês</span>
-              </p>
-              <p className="text-green-600 mt-4 text-lg">
-                Menos que o salário de 1 funcionário (sem contar encargos, férias, 13º)
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section removed as per request */}
 
       {/* CTA Principal */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
@@ -580,7 +507,7 @@ const Index = () => {
               Pare de perder dinheiro hoje mesmo
             </h2>
             <p className="text-xl lg:text-2xl opacity-90 mb-12 leading-relaxed">
-              Agende uma demonstração ao vivo e veja como aumentar sua conversão em 35% nos próximos 30 dias
+              Agende uma demonstração ao vivo e veja como aumentar sua conversão em 50% nos próximos 30 dias
             </p>
             
             <div className="bg-white p-12 rounded-2xl text-gray-900 mb-12">
@@ -685,7 +612,7 @@ const Index = () => {
               </div>
               <div className="p-6">
                 <h4 className="font-bold mb-3 text-lg">ROI Garantido</h4>
-                <p className="text-gray-400">+35% conversão em 30 dias</p>
+                <p className="text-gray-400">+50% conversão em 30 dias</p>
               </div>
             </div>
             <Separator className="my-8 bg-gray-700" />
